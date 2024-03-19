@@ -1,3 +1,44 @@
-#heading{
-    color:blue;
+.header
+{
+    display: flex;
+    border: 3px solid black;
+    justify-content: space-between;
+
+}
+
+.logo
+{
+ width: 100px;
+}
+
+.navitems > ul{
+   display: flex;
+   font-size: 30px;
+   list-style-type: none;
+}
+
+.navitems>ul>li{
+    padding: 10px;
+    margin:10px;
+}
+
+.rescard{
+    width: 200px;
+    padding:5px;
+    margin:5px;
+}
+.rescard:hover{
+    border: 1px solid black;
+    cursor: pointer;
+}
+.search{
+    padding:10px
+}
+.resfoodimg{
+    width: 100%;
+    
+}
+.rescon{
+    display:flex;
+    flex-wrap: wrap;
 }
