@@ -1,28 +1,25 @@
 
+import { Link } from "react-router-dom";
 import { CDN_URL } from "../utils/constants";
-const Rescard = ({
-    cloudinaryImageId,
-    name,
-    cuisines,
-    area,
-    lastMileTravelString,
-    costForTwoString,
-    avgRating,
+const Rescard = ({info,cta
   })=> {
+    const Lkink=cta.link
     return (
        <div className="rescard">
+        <Link to={Lkink} target="_blank" style={{textDecoration:'none',color:'black'}}>
            <img className="resfoodimg" alt="res-logo" src={
             CDN_URL +
-           cloudinaryImageId
+           info.cloudinaryImageId
          }/>
-           <h2>{name}</h2>
-           <h4>{cuisines.join(", ")}</h4>
-           <h4>{area}</h4>
+           <h2>{info.name}</h2>
+           <h4>{info.cuisines.join(", ")}</h4>
+           <h4>{info.areaName}</h4>
           <span>
-           <h4><i className="fa-solid fa-star"></i>{avgRating}</h4>
-           <h4>{lastMileTravelString}</h4>
-           <h4>{costForTwoString}</h4>
+           <h4><i className="fa-solid fa-star"></i>{info.avgRating}</h4>
+           <h4>{info.sla.lastMileTravelString}</h4>
+           <h4>{info.costForTwo}</h4>
          </span>
+         </Link>
        </div>
     );
  }

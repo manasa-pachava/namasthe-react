@@ -38,7 +38,7 @@ const Body = () => {
           </div>
           <div className="rescon">
           {filteredRes.map((restaurant) => {
-         return <Rescard key={restaurant.info.id} {...restaurant.info} />;
+         return <Rescard key={restaurant.info.id} {...restaurant} />;
        })}
           </div>
  

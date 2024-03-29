@@ -48,3 +48,8 @@ naming cionvenyion export const Component -->import {Compoent} "from path"
 
 
  -->when ever state variable update sreact rerenders the component
+
+
+ --> two types of routing in web app
+   1) Client side routing
+   2) Router side routing
