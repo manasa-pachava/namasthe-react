@@ -5,7 +5,7 @@ const Contact = ()=>{
                 This is My contact
             </h1>
             <h2>
-                970170060
+                9701270060
             </h2>
         </div>
     )
