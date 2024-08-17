@@ -16,7 +16,7 @@
  -diffrent dev and prod builds
 
 # Namsthy food 
-//JSX IS html LIKE SYNTAX (trapiled to java script)Babel is trasnpiller comnvertt ot java scripy that js engine will undertsnd
+//JSX IS html LIKE SYNTAX (transpiled to java script)Babel is trasnpiller comnvertt ot java scripy that js engine will undertsnd
 /**
  header 
   -logo
