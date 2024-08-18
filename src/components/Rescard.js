@@ -5,13 +5,13 @@ const Rescard = ({info,cta
   })=> {
     const Lkink=cta.link
     return (
-       <div className="rescard">
+       <div className="m-4 p-4 w-[250px] rounded-lg bg-gray-100 hover:bg-gray-200">
         <Link to={Lkink} target="_blank" style={{textDecoration:'none',color:'black'}}>
-           <img className="resfoodimg" alt="res-logo" src={
+           <img className="rounded-lg" alt="res-logo" src={
             CDN_URL +
            info.cloudinaryImageId
          }/>
-           <h2>{info.name}</h2>
+           <h2 className="font-bold py-4 text-lg">{info.name}</h2>
            <h4>{info.cuisines.join(", ")}</h4>
            <h4>{info.areaName}</h4>
           <span>
