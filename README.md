@@ -53,3 +53,5 @@ naming cionvenyion export const Component -->import {Compoent} "from path"
  --> two types of routing in web app
    1) Client side routing
    2) Router side routing
+
+Single responsibility principle--> Modular

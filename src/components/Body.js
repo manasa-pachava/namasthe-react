@@ -2,7 +2,7 @@ import Rescard from "./Rescard";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer"
 import {SWIGGY_URL} from "../utils/constants";
- 
+import useOnlineStatus from "../utils/useOnlineStatus";
 //local state variable -->super powerful variable
 //
 
@@ -19,6 +19,12 @@ const Body = () => {
       setfilteredRes(json?.data?.cards[4]?.card?.card?.gridElements.infoWithStyle.restaurants);
    }
 
+   const onlineStatus = useOnlineStatus();
+
+   if(onlineStatus=== false) 
+      return (
+      <h1> Looks like you're offline!! please check your internet connection</h1>
+      )
   
     return listOfRestaurents.length === 0 ? (
     <Shimmer/> ): (
