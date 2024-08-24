@@ -55,3 +55,6 @@ naming cionvenyion export const Component -->import {Compoent} "from path"
    2) Router side routing
 
 Single responsibility principle--> Modular
+
+
+--> props drilling is resolveed using context

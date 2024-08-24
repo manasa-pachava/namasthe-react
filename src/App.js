@@ -7,9 +7,9 @@ import About from "./components/About"
 import Contact from "./components/Contact"
 import Error from "./components/Error"
 import RestaurantMenu from "./components/RestaurantMenu"
+import UserContext from "./utils/UserContext"
 
-
-//lazy loading-->on demand loading
+//lazy loading-->on demand loadingy
 
 const Grocery = lazy(()=>import("./components/Grocery") )
 
@@ -17,11 +17,13 @@ const Grocery = lazy(()=>import("./components/Grocery") )
 const AppLayout = () =>
 {
    return (
+   <UserContext.Provider value={{loggedInUser:"Manasa Pachava"}}>
    <div className="app">
     <Header/>
    <Outlet/>
     
    </div>
+   </UserContext.Provider>
    )
 
 }
