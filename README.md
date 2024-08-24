@@ -58,3 +58,14 @@ Single responsibility principle--> Modular
 
 
 --> props drilling is resolveed using context
+
+# Redux Toolkkit
+-Install Redux Toolkit @reduxjs/toolkit and react-redux
+--build our store
+--connect our store
+- slice(cart slice)
+--dispatch(action)
+--selector
+
+
+
